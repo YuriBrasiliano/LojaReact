@@ -1,17 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Cart() {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (product) => {
-    setCartItems([...cartItems, product]);
-  };
-
-  const removeFromCart = (product) => {
-    const updatedCart = cartItems.filter((item) => item.id !== product.id);
-    setCartItems(updatedCart);
-  };
-
+function Cart({ cartItems, removeFromCart }) {
   return (
     <div className="cart">
       <h2>Carrinho de Compras</h2>

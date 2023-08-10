@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function ProductList() {
+function ProductList({ addToCart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -18,6 +18,7 @@ function ProductList() {
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>Preço: R$ {product.price}</p>
+            <button onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>
           </li>
         ))}
       </ul>
