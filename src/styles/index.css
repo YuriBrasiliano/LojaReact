@@ -1,6 +1,7 @@
 /* Reset some default styles */
 body, h1, h2, ul {
   margin: 0;
+  color: white;
   padding: 0;
 }
 
@@ -101,6 +102,14 @@ body {
 .itemPreco {
   color: #007bff;
   font-weight: bold;
+}
+.valorCart{
+  color: #007bff !important;
+  font-weight: bold;
+}
+.valor{
+  color: black;
+  padding-top: 5px;
 }
 
 
