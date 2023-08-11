@@ -44,6 +44,23 @@ body {
   padding: 20px;
   text-align: center;
 }
+.product-details {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.product-details-content {
+  display: flex;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-image {
+  flex: 1;
+  text-align: right;
+}
 
 .product-list img {
   max-width: 80%;
